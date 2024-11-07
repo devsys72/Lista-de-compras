@@ -1,0 +1,10 @@
+<form (submit)="addItem()">
+  <input
+    type="text"
+    [(ngModel)]="itemName"
+    name="itemName"
+    placeholder="Adicione um item"
+    required
+  />
+  <button type="submit">Adicionar</button>
+</form>
