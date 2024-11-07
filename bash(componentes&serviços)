@@ -1,0 +1,3 @@
+ng generate component components/item-list
+ng generate component components/item-form
+ng generate service services/item
