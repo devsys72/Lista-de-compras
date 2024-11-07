@@ -1,1 +1,1 @@
-# Lista-de-compras-de Supermercado
+# Lista de compras de Supermercado
