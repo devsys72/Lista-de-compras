@@ -1,0 +1,20 @@
+<div>
+  <h2>Itens Não Comprados</h2>
+  <ul>
+    <li *ngFor="let item of items" *ngIf="!item.purchased">
+      <span>{{ item.name }}</span>
+      <button (click)="togglePurchased(item)">Marcar como Comprado</button>
+      <button (click)="editItem(item.id, item.name)">Editar</button>
+      <button (click)="deleteItem(item.id)">🗑️</button>
+    </li>
+  </ul>
+
+  <h2>Itens Comprados</h2>
+  <ul>
+    <li *ngFor="let item of items" *ngIf="item.purchased">
+      <span style="text-decoration: line-through;">{{ item.name }}</span>
+      <button (click)="togglePurchased(item)">Marcar como Não Comprado</button>
+      <button (click)="deleteItem(item.id)">🗑️</button>
+    </li>
+  </ul>
+</div>
